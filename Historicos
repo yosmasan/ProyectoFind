@@ -4,3 +4,12 @@ Select *
 from empleado
 where emp_tipoliq = "M"
 and emp_estado = "N"
+and emp_fechIngreso > to_date("01/01/2000","DD/MM/YYYY")
+
+
+-- Script para obtener históricos de pensionados
+
+Select * 
+from empleado
+where emp_tipoliq = "Q"
+and emp_estado = "N"
