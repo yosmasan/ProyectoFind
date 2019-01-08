@@ -1,0 +1,6 @@
+-- Script para obtener histórico de empleados
+
+Select * 
+from empleado
+where emp_tipoliq = "M"
+and emp_estado = "N"
