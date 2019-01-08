@@ -1,5 +1,5 @@
 -- Script para obtener histórico de empleados
-
+-- creator: yosmasan
 Select * 
 from empleado
 where emp_tipoliq = "M"
@@ -8,8 +8,13 @@ and emp_fechIngreso > to_date("01/01/2000","DD/MM/YYYY");
 
 
 -- Script para obtener históricos de pensionados
-
+--  creator: yamileosma
 Select * 
 from empleado
 where emp_tipoliq = "Q"
-and emp_estado = "N"
+and emp_estado = "N" 
+
+-- Verificación de históricos
+Select * 
+from trh_acumulados
+where emp_codigo = '79876409'
