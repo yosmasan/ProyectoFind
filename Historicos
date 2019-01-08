@@ -13,8 +13,15 @@ Select *
 from empleado
 where emp_tipoliq = "Q"
 and emp_estado = "N" 
+and emp_fechIngreso > to_date("31/03/1947","DD/MM/YYYY");
 
 -- Verificación de históricos
 Select * 
 from trh_acumulados
 where emp_codigo = '79876409'
+
+-- Verificación de históricos
+Select * 
+from trh_acumulados
+where emp_codigo = '79876409'
+and emp_tipoliq = "Q"
